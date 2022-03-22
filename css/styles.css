@@ -1,0 +1,150 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+
+/*logo da navigacia*/
+
+
+.navigation{
+    margin-top: 1em;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.logo{
+    display: flex;   
+    align-items: center;
+}
+.logo-img{
+    width: 35px;
+}
+.logo p{
+   font-size: 20px;
+   margin-left: .3em;
+   margin-top: .3em;
+   
+}
+img{
+    width: 100%;
+}
+
+.navbar{
+    width: 500px;
+    padding: 1em;
+ 
+    
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+    
+}
+
+.navbar li a{
+    color: white;
+    padding: .5em .8em;
+    
+}
+.navbar li a:hover{
+    color:#1b0fcc;
+}
+
+
+
+.bg-img{
+    position: absolute;
+    top:0;
+    right:0;
+    max-width: 700px;
+    width: 100%;
+    max-height: 20vh;
+    z-index: -1;
+}
+/*mtavari teqsti da foto*/
+.hero-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start
+}
+.hero-img{
+    max-width: 450px;
+    width: 100%;
+}
+.hero-text h2{
+    font-size: 35px;
+}
+.hero-text h1{
+    font-size: 50px;
+}
+.hero-text p{
+    max-width: 70%;
+    color:#7A839E;
+    margin: .7em 0;
+    text-transform: lowercase;
+}
+.hero-text a{
+    max-width: 200px;
+    width: 100%;
+    padding: 1em;
+    text-align: center;
+    border-radius: 1.5em;
+    color: white;
+    font-size: smaller;
+    background-color: #6156F9;
+}
+
+
+
+
+/*about us section*/
+.about-us{
+    display: flex;
+    justify-content: space-around;
+
+}
+.about-img{
+    max-width: 500px;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    background-image: url(/images/about-bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.about-text span{
+    color: #7E76F9;
+}
+.about-text h2 {
+    font-size: 25px;
+    margin: .4em 0 .7em 0;
+}
+.about-text p{
+    color:#7A839E
+}
+.about-text a{
+    max-width: 200px;
+    width: 100%;
+    padding: .7em 1em;
+    text-align: center;
+    border-radius: 1.5em;
+    color: white;
+    background-color:#6156F9;
+   margin-top: 1em;
+
+}

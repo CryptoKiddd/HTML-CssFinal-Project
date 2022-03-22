@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.368" height="20.423" viewBox="0 0 25.368 20.423">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.119" y1="0.577" x2="0.5" y2="0.577" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6156f9"/>
+      <stop offset="1" stop-color="#1a129f"/>
+    </linearGradient>
+  </defs>
+  <g id="_002-google-plus" data-name="002-google-plus" transform="translate(0 -57.194)">
+    <g id="Group_1282" data-name="Group 1282" transform="translate(0 57.194)">
+      <g id="Group_1281" data-name="Group 1281" transform="translate(0 0)">
+        <path id="Path_1203" data-name="Path 1203" d="M22.324,66.271H11.906v3.177h6.356a7.4,7.4,0,0,1-7.1,4.765c-4.11,0-7.441-3.048-7.441-6.808S7.052,60.6,11.162,60.6a7.775,7.775,0,0,1,5.29,2.021l2.521-2.507a11.678,11.678,0,0,0-7.811-2.918C5,57.194,0,61.766,0,67.405S5,77.617,11.162,77.617c5.4,0,10.128-3.508,11.162-8.169V66.271Z" transform="translate(0 -57.194)" fill="url(#linear-gradient)"/>
+        <path id="Path_1204" data-name="Path 1204" d="M391.649,189.785h-.959v-.959h-.822v.959h-.959v.822h.959v.959h.822v-.959h.959Z" transform="translate(-366.282 -180.347)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

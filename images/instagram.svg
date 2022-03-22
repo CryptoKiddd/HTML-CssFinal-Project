@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.768" height="30.071" viewBox="0 0 25.768 30.071">
+  <defs>
+    <linearGradient id="linear-gradient" x1="1.119" y1="0.577" x2="0.5" y2="0.577" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6156f9"/>
+      <stop offset="1" stop-color="#1a129f"/>
+    </linearGradient>
+  </defs>
+  <g id="instagram" transform="translate(0.2 0.2)">
+    <g id="Group_1285" data-name="Group 1285">
+      <g id="Group_1284" data-name="Group 1284">
+        <path id="Path_1209" data-name="Path 1209" d="M18,0H7.369C3.306,0,0,3.866,0,8.619V21.052c0,4.753,3.306,8.619,7.369,8.619H18c4.063,0,7.369-3.866,7.369-8.619V8.619C25.368,3.866,22.062,0,18,0Zm5.387,21.052c0,3.474-2.417,6.3-5.387,6.3H7.369c-2.97,0-5.387-2.827-5.387-6.3V8.619c0-3.474,2.417-6.3,5.387-6.3H18c2.97,0,5.387,2.827,5.387,6.3Z" stroke="#7e76f9" stroke-width="0.4" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_1287" data-name="Group 1287" transform="translate(10.293 12.444)">
+      <g id="Group_1286" data-name="Group 1286">
+        <path id="Path_1210" data-name="Path 1210" d="M120.391,118a2.391,2.391,0,1,0,2.391,2.391A2.394,2.394,0,0,0,120.391,118Zm0,4.09a1.7,1.7,0,1,1,1.7-1.7A1.7,1.7,0,0,1,120.391,122.09Z" transform="translate(-118 -118)" stroke="#7e76f9" stroke-width="0.4" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+    <g id="Group_1289" data-name="Group 1289" transform="translate(19.656 5.894)">
+      <g id="Group_1288" data-name="Group 1288">
+        <circle id="Ellipse_91" data-name="Ellipse 91" cx="0.347" cy="0.347" r="0.347" stroke="#7e76f9" stroke-width="0.4" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>
