@@ -11,7 +11,9 @@ body{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    }
+    
+
+}
 h2{
     font-size: 35px;
     font-weight: 600;
@@ -124,6 +126,11 @@ img{
     color: white;
     font-size: smaller;
     background-color: rgb(97, 86, 249);
+    transition: 250ms linear;
+}
+.hero-text a:hover{
+    background:rgb(12, 4, 121) ;
+    font-weight: 700;
 }
 
 
@@ -165,12 +172,18 @@ span{
     text-align: center;
     border-radius: 1.5em;
     color: white;
-    background-color:rgb(97, 86, 249);
-   margin-top: 1em;
+    background-color:rgba(97, 86, 249);
+    margin-top: 1em;
+    transition: 250ms linear;
 
 }
+.about-text a:hover{
+    background:rgb(12, 4, 121) ;
+    font-weight: 700;
+}
 
-/*testimonials section*/
+
+/* .................services section...............*/
 .services-wrapper{
     display: flex;
     flex-direction: column;
@@ -179,68 +192,81 @@ span{
 .services-header{
     text-align: center;
     padding: 2em;
+    font-weight: 700;
 }
 .services{
-     position: relative;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     flex-wrap: wrap;
-     max-width: 100%;
-     z-index: 1;
+    position: relative;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    z-index: 1;
  }
  .services-card{
-     position: relative;
-     width: 350px;
-     height: 350px;
-     box-shadow: 
+    position: relative;
+    max-width: 325px;
+    width: 100%;
+    height: 375px;
+    box-shadow: 
      1px 1px 0px rgb(97, 86, 249),
      2px 2px 0px rgb(97, 86, 249),
      3px 3px 0px rgb(97, 86, 249),
      4px 4px 0px rgb(97, 86, 249),
      5px 5px 0px rgb(97, 86, 249),
      6px 6px 0px rgb(97, 86, 249); 
-     background: rgba(31, 27, 28, 0.116);
-     overflow: hidden;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     border-top: 1px solid rgba(97, 86, 249);
-     border-left: 1px solid rgba(97, 86, 249);
-     backdrop-filter: blur();
-     border-radius: 10px;
+    background: rgba(31, 27, 28, 0.116);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(97, 86, 249);
+    border-left: 1px solid rgba(97, 86, 249);
+    backdrop-filter: blur();
+    border-radius: 10px;
  }
  .sc-margin
  {
-     margin-bottom: 1em;
+     margin-bottom: 30px;
  }
  .services-content{
      padding: 20px;
      text-align: center;
+     color:#7A839E;
+     height:200px
+
+     
  }
  .services-content p{
     width: 100%;
     padding: 0;
+    text-align: start;
  }
  .services-content h3{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: .3em;
+    font-weight: 600;
  }
  
  .services-content a{
      display: inline-block;
+     position: absolute;
+     bottom: 15px;
      padding: 1em;
-     background: #fff;
-     margin-top: 1em;
+     margin: 0 auto;
      border-radius: 30px;
-     color: #333;
+     color:white;
+     border: 1px solid white;
+     font-weight: bold;
      transition: .5s;
 
  }
  .services-content a:hover {
-     background: rgba(117, 144, 175, 0.514);
-     color: #fff
+     background: #fff;
+     color:#333
+     
+    
  }
  .services-image{
      width: 75px;
@@ -248,11 +274,13 @@ span{
  
  
  
+ 
+ 
 
 
 
 
-                                    /*services section*/
+                                    /*testimonials section*/
 
 .testimonials-wrapper{
     margin-top: 3em;
@@ -265,7 +293,8 @@ span{
 }  
 .testimonials-header{
     text-align: center;
-    width: 1000px;
+    margin-top: 2em;
+    transform: translateY(45px);
     
 }
 .testimonials-header h2{
@@ -279,14 +308,14 @@ span{
     max-width: 1200px;
     width: 100%;
     flex-wrap: wrap;
-    color: #333;
+    color:#7A839E;
 }     
 .testimonials-card{
     position: relative;
-    max-height: 400px;
+    height: 250px;
 }
 .testimonials-box{
-    max-width: 350px;
+    max-width: 300px;
     width: 100%;
     height: 200px;
     transition: 0.5s;
@@ -294,15 +323,16 @@ span{
 
 .testimonials-box1 {
     position: relative;
-    background: #333;
+    background:#333;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     align-items: stretch;
-    color:white;
+    color:#7A839E;
     transform: translateY(200px);
     height: 150px;
+    font-weight: bold;
 
 }  
 .testimonials-content{
@@ -314,7 +344,7 @@ span{
     opacity: 2;
 }
 .testimonials-card:hover .testimonials-box.testimonials-box1{
-    transform: translateY(0)
+    transform: translateY(50px)
 }
 
 
@@ -331,7 +361,7 @@ span{
     position: absolute;
     width: 160px;
     height: 110px;
-    top: 10px;
+    top: 0;
     box-shadow: 0 20px 50px rgba(10, 3, 3, 0.164);
 }
 .testimonials-content{
@@ -378,7 +408,7 @@ span{
     background: #333;
     color: #fff;
 }             
-/*contact-us*/
+/*...........................Contact-usssss..............*/
 .contact-us-wrapper{
     display: flex;
     flex-direction: column;
@@ -389,6 +419,7 @@ span{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 2em;
 }
 
 .contact-item{
@@ -462,6 +493,161 @@ input[type=submit]{
     border: none;
     border-radius: 50px;
     color: white;
+    transition: 250ms linear;
     cursor: pointer;
 
 }
+input[type=submit]:hover{
+    background:rgb(12, 4, 121) ;
+    font-weight: 700;
+}
+ /* ...............PRICING.....................                  */
+.pricing-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3em 0;
+} 
+.pricing-packages{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.pricing-header{
+    text-align: center;
+} 
+.pricing-header h2{
+    margin:.5em 0 1em 0;
+    
+}   
+.package{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content:center;
+    max-width: 350px;
+    width: 100%;
+    height: 325px;
+    background: #eee6e6ea;
+    border-radius:50px;
+    box-shadow: rgb(50, 50, 93) 0px 50px 100px -20px, 
+    rgba(50, 50, 93) 0px 30px 60px -30px,
+    rgba(50, 50, 93) 0px -2px 6px 0px inset;
+   
+
+}  
+
+
+.package-content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 0 1em;
+    color: #3b3e44;
+    
+}  
+.package-content h4{
+    font-size:20px;
+    
+
+}
+.package-content p {
+    margin:1.25em
+}   
+.package-content a{
+    margin:5px 0;
+    padding: 5px;
+    border: 1px solid black;
+    color:#333;
+    font-weight: bold;
+    transition: 250ms linear;
+}
+.package-content span{
+    font-size: 18px;
+    font-weight: bold;
+    color: #140b94ec;
+}
+.package-content a:hover{
+    background: #333;
+    color: #fff;
+}
+.package-content-more{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom:0
+}
+.package:nth-child(1){
+    height: 250px;
+   display: flex;
+   align-items: center;
+   border-radius: 50px;
+}  
+.package:nth-child(2){
+    height: 290px;
+   display: flex;
+   align-items: center;
+   border-radius: 50px;
+   color: #7E76F9;
+}  
+/*...............................Footer................*/
+footer{
+    background: #eee6e6d0;
+    border-top-left-radius:50px;
+    border-top-right-radius: 50px;
+    box-shadow: rgb(50, 50, 93) 0px 50px 100px -20px, 
+    rgba(50, 50, 93) 0px 30px 60px -30px,
+    rgba(50, 50, 93) 0px -2px 6px 0px inset;
+    color: #7E76F9;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 200px;
+    
+}
+
+.quick-links, .Hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-contacts{
+    max-width: 15px;
+    width: 100%;
+    margin-right: 10px;
+}
+.footer-wrapper img{
+    width: 100%;
+}
+.footer-contact-list{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.quick-links a{
+    margin-bottom: 8px;
+    color: #7A839E;
+}
+.quick-links h4{
+    margin-bottom: 10px;
+}
+.Hours h4{
+    margin-bottom: 10px;
+}
+.Hours li {
+    margin-bottom: 8px;
+}
+.footer-contact h4{
+    margin-bottom: 10px;
+}
+.footer-contact-list{
+   margin-bottom: 10px;
+}
+
+  
+    
