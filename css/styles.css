@@ -680,6 +680,45 @@ h2{
 
 
 /*Responsive navigation*/
+@media (max-width:1024px){
+    .container{
+        max-width: 900px;
+        width: 100%;
+    }
+    .testimonials-wrapper{
+        min-height: 700px;
+    }
+    .testimonials{
+        justify-content: space-around;
+        
+       
+    }
+    .testimonials-card:nth-child(3):hover .testimonials-box.testimonials-box1{
+        transform: translateY(350px)
+    }
+    .testimonials-card:nth-child(2){
+        margin-left: 1em;
+    }
+    
+    .pricing-wrapper{
+        flex-direction: column;
+    }
+    .pricing-packages{
+        flex-direction: column;
+        align-items: center;
+    }
+    .package:nth-child(1),.package:nth-child(2){
+        height: 300px;
+        margin-bottom: 18px;
+    }
+    .pricing-wrapper{
+        margin-top: 5.1em;
+        padding-top: 2em;
+    }
+    .services-card{
+        margin-bottom: 1.5em;
+    }
+}
 @media(max-width: 768px){
     .container{
         max-width: 700px;
