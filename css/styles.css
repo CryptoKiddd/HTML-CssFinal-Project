@@ -857,8 +857,15 @@ h2{
         }
         .audit-btn{
             position: absolute;
-            bottom: -3.2em;
+            bottom:0;
            
+        }
+        .about-text{
+            margin-top: 2em;
+            
+        }
+        .testimonials-header{
+            margin-top: 0;
         }
         .testimonials-wrapper{
 
@@ -872,6 +879,9 @@ h2{
         }
         .pricing-wrapper{
             transform: translateY(40%);
+        }
+        .package:nth-child(1){
+            margin-top: 10px;
         }
         .contact-us-wrapper{
             transform: translateY(55%);
