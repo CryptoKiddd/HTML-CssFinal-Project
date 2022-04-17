@@ -64,7 +64,7 @@ img{
     
 }
 .mobile-nav-toggle{
-    display: none;
+   display:none
 }
 .navbar ul{
     display: flex;
@@ -724,11 +724,32 @@ h2{
         max-width: 700px;
         width: 100%;
     }
+    
+    .mobile-nav-toggle{
+    display: block;
+    position: fixed;
+    background-color: transparent;
+    z-index: 999;
+    background-image: url(../images/icons8-hamburger-menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 350ms ease-out;
+    width: 50px;
+    height: 50px;
+    top: 2rem;
+    right: 2rem;
+    border: 0;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]{
+        background-image: url(../images/x-icon.png);
+        background-repeat: no-repeat;
+        transition: background-image 350ms ease-out;
+        z-index: 1000;
+    }
     .primary-navigation{
         position: fixed;
         z-index: 998;
         inset: 0 0 0 40%;
- 
         background:#7670c550;
         flex-direction: column;
         padding: min(25vh, 10rem) 2em;
@@ -763,33 +784,10 @@ h2{
         color: #aa9ddf;
 
     }
-    .mobile-nav-toggle{
-        display: block;
-        position: fixed;
-        background-color: transparent;
-        z-index: 999;
-        background-image: url(/images/icons8-hamburger-menu.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        transition: background-image 350ms ease-out;
-        width: 50px;
-        height: 50px;
-        top: 2rem;
-        right: 2rem;
-        border: 0;
-    }
-    .mobile-nav-toggle[aria-expanded="true"]{
-        background-image: url(/images/x-icon.png);
-        background-repeat: no-repeat;
-        transition: background-image 350ms ease-out;
-        
-       
-        
-        z-index: 1000;
-        
-    }
+   
+    
     .hero-img{
-        max-width: 300px;
+        max-width: 200px;
     }
     .about-us{
         margin-top: 4em;
@@ -805,12 +803,11 @@ h2{
         max-width: 300px;
     }
     .testimonials-wrapper{
-        min-height: 700px;
+        min-height: 550px;
     }
     .testimonials{
         justify-content: space-around;
         
-       
     }
     .testimonials-card:nth-child(3):hover .testimonials-box.testimonials-box1{
         transform: translateY(350px)
@@ -840,13 +837,19 @@ h2{
 }
 @media(max-width:680px){
     .container{
-        max-width: 610px;
+        max-width: 600px;
         width: 100%;
+        position: relative;
     }
+    
     .testimonials{
       
         align-items: center;
+        justify-content: center;
+        min-height: 700px;
         opacity: 1;
+       
+        
     }
     .testimonials-box1 {
         transform: translateY(50px);
@@ -864,6 +867,18 @@ h2{
     }
     .testimonials-content{
         opacity: 1;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .testimonials-box{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .testimonials-card{
+        margin-bottom: 3.5em;
+    }
+    .testimonials-card:nth-child(2){
+        margin-bottom: -0.5em;
     }
     .services{
         align-items: center;
@@ -871,19 +886,30 @@ h2{
     }
 }
 @media (max-width:635px) {
+    .container{
+        max-width: 550px;
+        width: 100%;
+    }
+    
     .testimonials-header{
         margin-top: 0;
+        margin-bottom: 2em;
     }
-    .testimonials-wrapper{
+    /* .testimonials-wrapper{
 
-        height: 700px;
+        min-height: 700px;
+    } */
+   
+    .hero-text h2{
+        font-size: 20px;
     }
-    .testimonials-card{
-        margin-bottom: 3.5em;
+    .hero-text h1{
+        font-size: 40px;
     }
-    footer{
-        display: none;
-    }
+    
+     footer{
+        transform: translateY(220%);
+    } 
     .pricing-wrapper{
         transform: translateY(40%);
     }
@@ -903,6 +929,13 @@ h2{
 
 
     @media(max-width:465px){
+       .audit-btn{
+          bottom: 0;
+          background: red;
+       }
+       .hero-img{
+           position: relative;
+       }
         .hero-text{
             width: 300px;
             align-items: center;
@@ -925,7 +958,7 @@ h2{
         }
         .audit-btn{
             position: absolute;
-            bottom:0;
+            bottom:45px;
            
         }
         .about-text{
