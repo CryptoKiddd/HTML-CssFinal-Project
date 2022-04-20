@@ -2,16 +2,17 @@ VanillaTilt.init(document.querySelectorAll(".services-card"), {
     max: 25,
     speed: 400
 });
-const primaryNav = document.querySelector('.primary-navigation'); 
-const navToggle = document.querySelector('.mobile-nav-toggle');
-navToggle.addEventListener('click', () =>{
-    const visibility = primaryNav.getAttribute('data-visible')
-    if(visibility === 'false'){
-        primaryNav.setAttribute('data-visible', true);
-        navToggle.setAttribute('aria-expanded', true);
-    }else if(visibility === 'true'){
-        primaryNav.setAttribute('data-visible', false);
-        navToggle.setAttribute('aria-expanded', false);
-    }
+const  hamburger = document.querySelector(".hamburger");
+const  navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () =>{
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
 
 })
+document.querySelectorAll(".nav-link").forEach(n => 
+    n.addEventListener("click",() =>{
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    })
+    )
